@@ -24,22 +24,11 @@ Una aplicación moderna y de alto rendimiento para la gestión y visualización 
 
 ## 📦 Instalación y Configuración
 
-Sigue estos pasos para ejecutar el proyecto en tu entorno local:
+(Requiere el backend de Klerith: https://github.com/Klerith/nest-heroes-backend)
 
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/tu-usuario/heroes-app.git](https://github.com/tu-usuario/heroes-app.git)
-    ```
-
-2.  **Instalar dependencias:**
-    ```bash
-    npm install
-    ```
-
-3.  **Ejecutar en modo desarrollo:**
-    ```bash
-    npm run dev
-    ```
-
----
+1. Clonar el repositorio
+2. Editar el archivo `.env` con las variables de entorno basado en el archivo `.env.template`
+3. Ejecutar `npm install`
+4. Ejecutar `npm run dev`
+   
 Hecho con ❤️ por ErkSt
