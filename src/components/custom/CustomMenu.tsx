@@ -10,7 +10,7 @@ export const CustomMenu = () => {
         return pathname === path
     }
     return (
-        <NavigationMenu>
+        <NavigationMenu className="py-3">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={cn(isActive('/') && 'bg-slate-200', 'p-2  rounded-md')}>
