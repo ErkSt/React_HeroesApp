@@ -1,75 +1,34 @@
-# React + TypeScript + Vite
+# 🦸‍♂️ Heroes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación moderna y de alto rendimiento para la gestión y visualización de héroes, construida con las últimas tecnologías de desarrollo web. Este proyecto se enfoca en una experiencia de usuario fluida y una arquitectura escalable.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Características Principales
 
-## React Compiler
+* **Implementación de shadcn/ui y Tailwind CSS:** Estilos consistentes y componentes de alta calidad, garantizando una estética moderna y totalmente responsive.
+* **Interfaz Generada con IA:** El diseño y la estructura de la UI han sido optimizados y generados utilizando herramientas de vanguardia como **v0**, **Lovable** y **Bolt.new**.
+* **Navegación con React Router:** Gestión robusta de rutas para una experiencia de Single Page Application (SPA) fluida.
+* **Arquitectura Basada en Layouts:** Uso de envoltorios estructurales para mantener la coherencia visual en todas las secciones de la app.
+* **Rendimiento Optimizado (Lazy Loading):** Implementación de carga diferida en el enrutamiento para reducir el tiempo de carga inicial y mejorar la eficiencia.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Stack Tecnológico
 
-Note: This will impact Vite dev & build performances.
+| Tecnología | Propósito |
+| :--- | :--- |
+| **React** | Biblioteca principal de UI |
+| **Tailwind CSS** | Framework de estilos utilitarios |
+| **shadcn/ui** | Componentes de UI altamente personalizables |
+| **React Router** | Gestión de rutas y navegación |
+| **Vite** | Herramienta de construcción y entorno de desarrollo |
 
-## Expanding the ESLint configuration
+## 📦 Instalación y Configuración
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+(Requiere el backend de Klerith: https://github.com/Klerith/nest-heroes-backend)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clonar el repositorio
+2. Editar el archivo `.env` con las variables de entorno basado en el archivo `.env.template`
+3. Ejecutar `npm install`
+4. Ejecutar `npm run dev`
+   
+Hecho con ❤️ por ErkSt
