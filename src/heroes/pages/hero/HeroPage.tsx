@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { getHeroAction } from "@/heroes/actions/get-hero.action"
 import { useQuery } from "@tanstack/react-query"
 import { Shield, Zap, Brain, Gauge, Users, Star, Award } from "lucide-react"
-import { Navigate, useParams, useSearchParams } from "react-router"
+import { Navigate, useParams } from "react-router"
 
 
 // const superheroData = {

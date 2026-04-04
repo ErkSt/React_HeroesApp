@@ -11,3 +11,12 @@ tanstackquery
 uso de queryparams en lugar de usestate
 
 custom hooks
+
+
+++++
+
+
+
+uso de context para superheroes favoritos
+filtro de busqueda multi filtro
+slider de shadcn
