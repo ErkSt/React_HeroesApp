@@ -49,6 +49,8 @@ describe('getHeroesByPageAction', () => {
 
         const result = await getHeroesByPageAction('abc' as unknown as number);
 
+        console.log(result);
+
         const params = heroesApiMock.history.get[0].params;
         expect(params).toStrictEqual({ limit: 6, offset: 0, category: 'all' });
     });
@@ -65,6 +67,7 @@ describe('getHeroesByPageAction', () => {
         heroesApiMock.onGet('/').reply(200, responseObject);
 
         const result = await getHeroesByPageAction('5' as unknown as number);
+        console.log(result);
 
         const params = heroesApiMock.history.get[0].params;
         expect(params).toStrictEqual({ limit: 6, offset: 24, category: 'all' });
@@ -82,6 +85,7 @@ describe('getHeroesByPageAction', () => {
         heroesApiMock.onGet('/').reply(200, responseObject);
 
         const result = await getHeroesByPageAction(2, 10, 'heroes');
+        console.log(result);
 
         const params = heroesApiMock.history.get[0].params;
         console.log(params);

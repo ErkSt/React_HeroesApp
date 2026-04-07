@@ -1,5 +1,5 @@
 import { RouterProvider } from 'react-router'
-import { Button } from './components/ui/button'
+// import { Button } from './components/ui/button'
 import { appRouter } from './router/app.router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'

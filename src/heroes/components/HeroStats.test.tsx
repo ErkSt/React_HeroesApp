@@ -69,7 +69,7 @@ describe('HeroStats', () => {
 
         const favoritePercentageElement = screen.getByTestId('favorite-percentage');
         // screen.debug(favoritePercentageElement);
-        expect(favoritePercentageElement.innerHTML).toContain('2500.00%');
+        expect(favoritePercentageElement.innerHTML).toContain('4.00%');
 
         const favoriteCountElement = screen.getByTestId('favorite-count')
         // screen.debug(favoriteCountElement)

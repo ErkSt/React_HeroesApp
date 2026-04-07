@@ -1,5 +1,5 @@
 import { Slash } from "lucide-react";
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "../ui/breadcrumb";
 
 interface Breadcrumb {

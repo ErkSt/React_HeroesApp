@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+// import { useQuery } from "@tanstack/react-query";
 import { describe, expect, test } from "vitest";
 import { getHeroAction } from "./get-hero.action";
 

@@ -127,7 +127,7 @@ exports[`HeroStats > should render HeroStats with mocked information 1`] = `
           class="text-xs text-muted-foreground"
           data-testid="favorite-percentage"
         >
-          Infinity
+          0.00
           % of total
         </p>
       </div>
@@ -238,12 +238,14 @@ exports[`HeroStats > should render HeroStats with mocked information 1`] = `
         <div
           class="text-lg font-bold"
         >
-          10
+          Batman
         </div>
         <p
           class="text-xs text-muted-foreground"
         >
-          Intelligence: 10/10
+          Intelligence: 
+          10
+          /10
         </p>
       </div>
     </div>

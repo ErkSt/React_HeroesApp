@@ -43,7 +43,7 @@ export const HeroStats = () => {
             <HeroStatCard title="Favoritos"
                 icon={<Heart className="h-4 w-4 text-muted-foreground" />}>
                 <div className="text-2xl font-bold text-red-600" data-testid="favorite-count">{favoriteCounte}</div>
-                <p className="text-xs text-muted-foreground" data-testid="favorite-percentage">{((summary.totalHeroes / favoriteCounte) * 100).toFixed(2)}% of total</p>
+                <p className="text-xs text-muted-foreground" data-testid="favorite-percentage">{((favoriteCounte / summary.totalHeroes) * 100).toFixed(2)}% of total</p>
             </HeroStatCard>
 
             <HeroStatCard title="Strongest"
@@ -54,8 +54,8 @@ export const HeroStats = () => {
 
             <HeroStatCard title="Smartest"
                 icon={<Trophy className="h-4 w-4 text-muted-foreground" />}>
-                <div className="text-lg font-bold">{summary?.smartestHero.intelligence}</div>
-                <p className="text-xs text-muted-foreground">Intelligence: 10/10</p>
+                <div className="text-lg font-bold">{summary?.smartestHero.alias}</div>
+                <p className="text-xs text-muted-foreground">Intelligence: {summary?.smartestHero.intelligence}/10</p>
             </HeroStatCard>
 
         </div>

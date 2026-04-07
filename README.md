@@ -64,5 +64,7 @@ Se ha implementado una robusta suite de pruebas para asegurar el correcto funcio
    ```bash
    npm run dev
 
+Link de desplegado en produccion del frontend: cerulean-cannoli-2e4d1f.netlify.app
+Link de desplegado en produccion del backend: https://heroesapp-backend-gfdl.onrender.com/
 
 Hecho con ❤️ por ErkSt
